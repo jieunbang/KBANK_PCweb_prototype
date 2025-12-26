@@ -592,14 +592,14 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(7.5px);
       -webkit-backdrop-filter: blur(7.5px);
       opacity: 0;
       transition: opacity 0.3s ease;
       pointer-events: none;
       border-radius: 32px;
-      z-index: 1;
+      z-index: 2;
     }
 
     .text-card-hover-content {
@@ -650,11 +650,12 @@
     }
 
     .side-card.text-card:hover .side-card-image {
-      opacity: 0;
+      opacity: 1;
     }
 
     .side-card.text-card .side-card-image {
       transition: opacity 0.3s ease;
+      z-index: 1;
     }
 
     /* 두 번째 사이드 카드 - 텍스트 카드 */
@@ -665,8 +666,8 @@
     }
 
     .side-card.text-card .side-card-image {
-      width: 200px;
-      height: 130px;
+      width: 240px;
+      height: auto;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -2358,7 +2359,7 @@
     /* 스토리 타이틀 래퍼 */
     .section8-story-title-wrapper {
       padding-top: 152px;
-      padding-bottom: 52px;
+      padding-bottom: 0;
       display: flex;
       justify-content: center;
       flex-shrink: 0;

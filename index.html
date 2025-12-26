@@ -2440,7 +2440,7 @@
     }
 
     .section8-contents-container .section8-contents-list {
-      transform: translateY(-10%);
+      transform: translateY(0);
     }
 
     /* 섹션 8 내부 푸터 */
@@ -2517,9 +2517,9 @@
     }
 
     .section8-story-card:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       z-index: 10;
-      margin: 0 calc((0.2 * (100vw - 320px - 48px) / 2) / 2);
+      margin: 0 calc((0.1 * (100vw - 320px - 48px) / 2) / 2);
     }
 
     @media (min-width: 1920px) {
@@ -3606,7 +3606,7 @@
         
         // 새 위치 계산 및 적용
         const newPosition = ratio * maxScroll;
-        section8ContentsList.style.transform = `translateX(-${newPosition}px) translateY(-10%)`;
+        section8ContentsList.style.transform = `translateX(-${newPosition}px)`;
         section8ScrollPosition = newPosition;
         section8MaxScroll = maxScroll;
       });
@@ -4427,7 +4427,7 @@
           section8ScrollPosition = 0;
           section8ContentsContainer.classList.remove('visible');
           section8StoryContent.classList.remove('visible');
-          section8ContentsList.style.transform = 'translateX(0) translateY(-10%)';
+          section8ContentsList.style.transform = 'translateX(0)';
           section8TitleWrapper.classList.remove('moved-up');
           
           // footer 애니메이션 상태 초기화
@@ -4605,7 +4605,7 @@
         // 컨텐츠 숨기기
         section8ContentsContainer.classList.remove('visible');
         section8StoryContent.classList.remove('visible');
-        section8ContentsList.style.transform = 'translateX(0) translateY(-10%)';
+        section8ContentsList.style.transform = 'translateX(0)';
         section8ScrollPosition = 0;
         
         // footer 애니메이션 상태 초기화

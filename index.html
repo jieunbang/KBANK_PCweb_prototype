@@ -548,22 +548,29 @@
       height: 56px;
       border-radius: 1000px;
       border: 1px solid #ced4e2;
-      background: transparent;
+      background: rgba(255, 255, 255, 0);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       flex-shrink: 0;
-      transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     .side-card-hover-button:hover {
       background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .side-card-hover-button svg {
       width: 24px;
       height: 24px;
+    }
+
+    .side-card-hover-button svg path {
+      stroke: #2a2e36 !important;
+      stroke-width: 1.5;
     }
 
     /* 첫 번째 사이드 카드에만 호버 적용 */

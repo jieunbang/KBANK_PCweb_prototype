@@ -2372,6 +2372,7 @@
 
     .section8-title-wrapper.moved-up .section8-title-highlight {
       color: #17191e;
+      transition: color 0.5s ease-out;
     }
 
     /* 섹션 8_1 - 스토리 컨텐츠 */
@@ -2408,10 +2409,10 @@
       position: relative;
     }
 
-    /* 스토리 타이틀 래퍼 */
+    /* 스토리 타이틀 래퍼 - 콘텐츠와 함께 스크롤 */
     .section8-story-title-wrapper {
       padding-top: 152px;
-      padding-bottom: 0;
+      padding-bottom: 52px;
       display: flex;
       justify-content: center;
       flex-shrink: 0;
@@ -2521,21 +2522,21 @@
     }
 
     .section8-story-card:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       z-index: 10;
-      margin: 0 calc((0.2 * (100vw - 320px - 48px) / 2) / 2);
+      margin: 0 calc((0.1 * (100vw - 320px - 48px) / 2) / 2);
     }
 
     @media (min-width: 1920px) {
       .section8-story-card:hover {
-        margin: 0 58px;
+        margin: 0 29px;
       }
     }
 
     .section8-story-card-image-wrapper {
       width: 100%;
       aspect-ratio: 540 / 368;
-      border-radius: 26px;
+      border-radius: 24px;
       overflow: hidden;
       background-color: #e0e6f1;
     }
